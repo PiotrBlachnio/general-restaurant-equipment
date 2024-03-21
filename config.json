@@ -1,0 +1,120 @@
+{
+    "projectId": "65fbe6c973935565474824e9", 
+    "apiDevelopmentUrl": "http://localhost:8081",
+    "apiProductionUrl": "https://api.carybit.com",
+    "withLogo": true,
+    "isWebP": true,
+    "phoneNumber": "323-225-1522",
+    "isRightContainerVisibleOnClick": true,
+    "isFirstPageWithRightContainer": true,
+    "isLazyLoading": true,
+    "skipButtonText": "DON'T KNOW? > SKIP",
+    "variables": {
+        "userId": "65fbe6084f133d916a56b174",
+
+        "zapierCreateLeadUrl": "",
+        "zapierUpdateLeadUrl": "",
+
+        "categoryQuestionOrder": 1,
+        "categoryQuestionAnswers": {
+            "ranges": "",
+            "roaster": "",
+            "cooler": ""
+        },
+
+        "coolerQuestionOrder": "6",
+        "coolerQuestionId": "65fbe6cf739355654748253b"
+    },
+    "pngImages": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+    ],
+    "pagesWithoutAnimation": ["6"],
+    "questionOverwrites": {
+        "1": "Click to choose the products below",
+        "3": "Choose specific range options:",
+        "4": "What options are needed?"
+    },
+    "pageSettings": {
+        "1": {
+            "answerTextPosition": "bottom"
+        },
+        "2": {
+            "answerTextPosition": "bottom"
+        },
+        "3": {
+            "answerTextPosition": "bottom"
+        },
+        "4": {
+            "answerTextPosition": "bottom"
+        },
+        "5": {
+            "answerTextPosition": "bottom",
+            "subtextPosition": "bottom"
+        },
+        "6": {
+            "answerTextPosition": "bottom"
+        },
+        "7": {
+            "answerTextPosition": "bottom"
+        }
+    },
+    "orderedPages": [
+        "1",
+        "zipForm",
+        "emailForm",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "contactForm",
+        "confirmation"
+    ],
+    "pagesWithHiddenGoBackButton": [
+        "lastPage",
+        "confirmation"
+    ],
+    "lastPageWithProgressBar": "lastPage",
+    "primaryColor": "#eb2127",
+    "title": "none",
+    "removeTextAnswersUsingPreviousButton": true,
+    "rightContainer": [
+        "answersTracker"
+    ],
+    "note": "",
+    "contactForm": {
+        "title": "YOUR contact INFO to PROVIDE A CUSTOM QUOTE?",
+        "buttonText": "CONTINUE",
+        "isButtonVisible": true,
+        "fields": [
+            {
+                "type": "text",
+                "id": "name",
+                "isRequired": true,
+                "placeholder": "Name",
+                "name": "name"
+            },
+            {
+                "type": "text",
+                "id": "restaurant",
+                "isRequired": true,
+                "placeholder": "Restaurant Name",
+                "name": "restaurant"
+            },
+            {
+                "type": "tel",
+                "id": "phone",
+                "isRequired": true,
+                "placeholder": "Phone",
+                "name": "tel"
+            }
+        ]
+    }
+}
