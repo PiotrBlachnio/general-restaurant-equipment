@@ -72,7 +72,7 @@ export const CoolerQuestion = ({ openAnswers, nextPage, setOpenAnswers, config, 
                         </label>
                     </div>
 
-                    <img src={"/img/answers/cooler.webp"} alt="Centered" className="center-image" width={300} />
+                    <img src={"/img/answers/cooler.webp"} alt="Centered" className="center-image" width={400} />
 
                     <div className="radio-group right-radio">
                         <label>
