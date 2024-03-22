@@ -53,7 +53,7 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
-    "@carybit/lead-generation-form": "^1.28.26",
+    "@carybit/lead-generation-form": "^1.28.30",
     "copy-webpack-plugin": "^11.0.0",
     "framer-motion": "^6.5.1",
     "plausible-tracker": "^0.3.8",

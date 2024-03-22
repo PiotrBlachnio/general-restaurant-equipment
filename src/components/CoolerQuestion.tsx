@@ -31,79 +31,87 @@ export const CoolerQuestion = ({ openAnswers, nextPage, setOpenAnswers, config, 
 
             <div className="form cooler-question">
                 <div className="container">
-                    {/* <div className="input">
-                        <input type={"number"} value={width} onChange={handleWidthChange} name={"width"} placeholder="Width (Feet)"/>
-                    </div>
-
-                    <div className="input">
-                        <input type={"number"} value={depth} onChange={handleDepthChange} name={"depth"} placeholder="Depth (Feet)"/>
-                    </div> */}
-
                     <div className="radio-group left-radio">
-                        <label>
+                        <label className="custom-radio-button">
                             <input
                                 type="radio"
-                                name="leftRadio"
+                                name="type"
                                 value="Stand Alone Freezer"
-                                onChange={(e) => setType(e.target.value)}
+                                onChange={(e) => handleTypeChange(e.target.value)}
                                 checked={type === "Stand Alone Freezer"}
+                                style={{ display: "none" }}
                             />
-                            <span>Stand Alone Freezer</span>
+                            <span className="checkmark"></span>
+                            <span className="label-text">Stand Alone Freezer</span>
                         </label>
-                        <label>
+
+                        <label className="custom-radio-button">
                             <input
                                 type="radio"
-                                name="leftRadio"
+                                name="type"
                                 value="Stand Alone Cooler"
-                                onChange={(e) => setType(e.target.value)}
+                                onChange={(e) => handleTypeChange(e.target.value)}
                                 checked={type === "Stand Alone Cooler"}
+                                style={{ display: "none" }}
                             />
-                            <span>Stand Alone Cooler</span>
+                            <span className="checkmark"></span>
+                            <span className="label-text">Stand Alone Cooler</span>
                         </label>
-                        <label>
+
+                        <label className="custom-radio-button">
                             <input
                                 type="radio"
-                                name="leftRadio"
+                                name="type"
                                 value="Freezer + Cooler with shared wall"
-                                onChange={(e) => setType(e.target.value)}
+                                onChange={(e) => handleTypeChange(e.target.value)}
                                 checked={type === "Freezer + Cooler with shared wall"}
+                                style={{ display: "none" }}
                             />
-                            <span>Freezer + Cooler with shared wall</span>
+                            <span className="checkmark"></span>
+                            <span className="label-text">Freezer + Cooler with shared wall</span>
                         </label>
                     </div>
 
                     <img src={"/img/answers/cooler.webp"} alt="Centered" className="center-image" width={400} />
 
                     <div className="radio-group right-radio">
-                        <label>
+                        <label className="custom-radio-button">
                             <input
                                 type="radio"
-                                name="rightRadio"
+                                name="size"
                                 value="Small 6'w x 10'd x 9'h"
-                                onChange={(e) => setSize(e.target.value)}
+                                onChange={(e) => handleSizeChange(e.target.value)}
                                 checked={size === "Small 6'w x 10'd x 9'h"}
+                                style={{ display: "none" }}
                             />
-                            <span>Small 6'w x 10'd x 9'h</span>
+                            <span className="checkmark"></span>
+                            <span className="label-text">Small 6'w x 10'd x 9'h</span>
                         </label>
-                        <label>
+
+                        <label className="custom-radio-button">
                             <input
                                 type="radio"
-                                name="rightRadio"
+                                name="size"
                                 value="Medium 10'w x 10'd x 9'h"
-                                onChange={(e) => setSize(e.target.value)}
+                                onChange={(e) => handleSizeChange(e.target.value)}
                                 checked={size === "Medium 10'w x 10'd x 9'h"}
+                                style={{ display: "none" }}
                             />
-                            <span>Medium 10'w x 10'd x 9'h</span>
+                            <span className="checkmark"></span>
+                            <span className="label-text">Medium 10'w x 10'd x 9'h</span>
                         </label>
-                        <label>
+
+                        <label className="custom-radio-button">
                             <input
                                 type="radio"
-                                name="rightRadio"
+                                name="size"
                                 value="Large 12'w x 12'd x 9'h"
-                                onChange={(e) => setSize(e.target.value)}
+                                onChange={(e) => handleSizeChange(e.target.value)}
                                 checked={size === "Large 12'w x 12'd x 9'h"}
+                                style={{ display: "none" }}
                             />
-                            <span>Large 12'w x 12'd x 9'h</span>
+                            <span className="checkmark"></span>
+                            <span className="label-text">Large 12'w x 12'd x 9'h</span>
                         </label>
                     </div>
                 </div>

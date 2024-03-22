@@ -10,6 +10,7 @@ import { ZipForm } from "./ZipForm";
 import { AnswersTracker } from "./AnswersTracker";
 import Plausible from 'plausible-tracker'
 import { CoolerQuestion } from "./CoolerQuestion";
+import { RangeOptionsQuestion } from "./RangeOptionsQuestion";
 
 const plausible = Plausible({
     trackLocalhost: false,
@@ -48,6 +49,7 @@ const MainComponent = () => {
             additionalPages={{
                 zipForm: <ZipForm />,
                 coolerQuestion: <CoolerQuestion config={config} />,
+                rangeOptions: <RangeOptionsQuestion config={config} />,
                 emailForm: <EmailForm setConfig={setConfig} config={config} plausible={plausible} />,
                 confirmation: <Confirmation config={config} submissions={submissions} plausible={plausible} />,
             }}

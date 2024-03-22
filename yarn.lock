@@ -992,10 +992,10 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@carybit/lead-generation-form@^1.28.26":
-  version "1.28.26"
-  resolved "https://npm.pkg.github.com/download/@carybit/lead-generation-form/1.28.26/2fe1301edd3bdc74c49bf9e80d1dd8a0d0a0726c#2fe1301edd3bdc74c49bf9e80d1dd8a0d0a0726c"
-  integrity sha512-HBW5jtvi77AtO7BibQ+E1nPTmk3PVRhhaiBjPlVrfmnM/dasb222iJ7AtxkuNDaYUTE3MXKlcuZg4gTvxKZKug==
+"@carybit/lead-generation-form@^1.28.30":
+  version "1.28.30"
+  resolved "https://npm.pkg.github.com/download/@carybit/lead-generation-form/1.28.30/e171112588f29d880fd930d6be6b4d6636a21d08#e171112588f29d880fd930d6be6b4d6636a21d08"
+  integrity sha512-tiN1rjugaBXSJBHItE76nlILZYxeZMKkSnYzpiQs1fyqmx17ChLNC6J0MeDBf3ORQdtdFHImYFKym6iMSc8Erg==
   dependencies:
     framer-motion "^6.5.1"
     react-calendly "^4.1.1"

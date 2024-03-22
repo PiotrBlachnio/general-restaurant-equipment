@@ -279,17 +279,10 @@ div.right-container {
     }
 
     &-3 {
-        .answer {
-            &.answer-selected {
-                .image-container img {
-                    box-shadow: 0 0px 0px var(--primary-color), 0 0 0 4px var(--primary-color);
-                    background-color: unset !important;
-                }
-            }
-        }
+        display: none;
     }
 
-    &-4 {
+    &-5 {
         @media (min-width: 975px) {
             div.answers {
                 max-width: 60% !important;
@@ -302,7 +295,7 @@ div.right-container {
         }
     }
 
-    &-6 {
+    &-7 {
         display: none;
     }
 }
@@ -809,8 +802,8 @@ button {
 
 div.cooler-question {
     div.container {
-        display: flex !important;
-        justify-content: center !important;
+        display: flex;
+        justify-content: center;
         flex-direction: row !important;
 
         img {
@@ -820,20 +813,83 @@ div.cooler-question {
         }
 
         .radio-group {
-            label {
+            display: flex !important;
+            flex-direction: column;
+            gap: 20px; /* Increase gap for better visual separation */
+            padding: 1rem;
+
+            .custom-radio-button {
                 display: flex !important;
-                flex-direction: column;
-                gap: 10px;
-                padding: 1rem;
+                flex-direction: column; /* Stack items vertically */
+                align-items: center; /* Center align items for a neat look */
+                cursor: pointer;
+                font-size: 16px;
+                user-select: none;
+
+                .label-text {
+                    width: 100px;
+                }
 
                 input {
-                    height: 18px;
+                    position: absolute;
+                    opacity: 0;
+                    cursor: pointer;
                 }
 
-                span {
-                    width: 120px;
-                    font-weight: 600;
+                .checkmark {
+                    height: 18px;
+                    width: 18px;
+                    background-color: #010101;
+                    border-radius: 50%;
+                    display: block; /* Ensure it's block level for spacing */
+                    position: relative; /* Adjusted for positioning */
+                    margin-bottom: 8px; /* Space between the button and text */
+                    transition: all .15s linear;
                 }
+
+                /* Hover effect */
+                &:hover input ~ .checkmark {
+                    background-color: var(--primary-color);
+                }
+
+                /* Indicator (hidden when not checked) */
+                // .checkmark:after {
+                //     content: "";
+                //     position: absolute;
+                //     display: none;
+                //     top: 9px;
+                //     left: 9px;
+                //     width: 8px;
+                //     height: 8px;
+                //     border-radius: 50%;
+                //     background: red;
+                // }
+
+                /* Show the indicator when checked */
+                input:checked ~ .checkmark:after {
+                    display: block;
+                }
+
+                /* Optional: Change background color when checked */
+                input:checked ~ .checkmark {
+                    background-color: var(--primary-color);
+                }
+
+                /* Change checkmark color on hover for unchecked items */
+                &:hover input:not(:checked) ~ .checkmark {
+                    background-color: var(--primary-color);
+                }
+            }
+        }
+    }
+}
+
+.range-options {
+    .answer {
+        &.answer-selected {
+            .image-container img {
+                box-shadow: 0 0px 0px var(--primary-color), 0 0 0 4px var(--primary-color);
+                background-color: unset !important;
             }
         }
     }

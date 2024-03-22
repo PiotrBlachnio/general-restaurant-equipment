@@ -1,5 +1,5 @@
 {
-    "projectId": "65fbe6c973935565474824e9", 
+    "projectId": "65fd5dc8cf2d2411a734a816", 
     "apiDevelopmentUrl": "http://localhost:8081",
     "apiProductionUrl": "https://api.carybit.com",
     "withLogo": true,
@@ -22,8 +22,15 @@
             "cooler": ""
         },
 
-        "coolerQuestionOrder": "6",
-        "coolerQuestionId": "65fbe6cf739355654748253b"
+        "rangeOptionsQuestionOrder": "3",
+        "rangeOptionsQuestionId": "65fd5dcacf2d2411a734a835",
+
+        "faucetsAnswerId": "65fd5dcacf2d2411a734a83b",
+
+        "faucetsNumberQuestionId": "65fd5dcbcf2d2411a734a844",
+
+        "coolerQuestionOrder": "7",
+        "coolerQuestionId": "65fd5dcecf2d2411a734a86b"
     },
     "pngImages": [
         "1",
@@ -32,13 +39,14 @@
         "4",
         "5",
         "6",
-        "7"
+        "7",
+        "8"
     ],
-    "pagesWithoutAnimation": ["6"],
+    "pagesWithoutAnimation": ["3", "7"],
     "questionOverwrites": {
         "1": "Click to choose the products below",
         "3": "Choose specific range options:",
-        "4": "What options are needed?"
+        "5": "What options are needed?"
     },
     "pageSettings": {
         "1": {
@@ -54,13 +62,15 @@
             "answerTextPosition": "bottom"
         },
         "5": {
-            "answerTextPosition": "bottom",
-            "subtextPosition": "bottom"
+            "answerTextPosition": "bottom"
         },
         "6": {
             "answerTextPosition": "bottom"
         },
         "7": {
+            "answerTextPosition": "bottom"
+        },
+        "8": {
             "answerTextPosition": "bottom"
         }
     },
@@ -70,10 +80,10 @@
         "emailForm",
         "2",
         "3",
-        "4",
         "5",
         "6",
         "7",
+        "8",
         "contactForm",
         "confirmation"
     ],
