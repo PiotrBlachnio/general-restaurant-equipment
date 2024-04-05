@@ -30,6 +30,8 @@ export const CoolerQuestion = ({ openAnswers, nextPage, setOpenAnswers, config, 
             <h3>What type of Walk-In Cooler or Freezer needed?</h3>
 
             <div className="form cooler-question">
+                <img src={"/img/answers/cooler.webp"} alt="Centered" className="center-image mobile-image" width={250} />
+
                 <div className="container">
                     <div className="radio-group left-radio">
                         <label className="custom-radio-button">
@@ -72,7 +74,7 @@ export const CoolerQuestion = ({ openAnswers, nextPage, setOpenAnswers, config, 
                         </label>
                     </div>
 
-                    <img src={"/img/answers/cooler.webp"} alt="Centered" className="center-image" width={400} />
+                    <img src={"/img/answers/cooler.webp"} alt="Centered" className="center-image desktop-image" width={400} />
 
                     <div className="radio-group right-radio">
                         <label className="custom-radio-button">

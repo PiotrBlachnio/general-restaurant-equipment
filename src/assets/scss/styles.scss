@@ -801,14 +801,20 @@ button {
 }
 
 div.cooler-question {
+    .mobile-image {
+        @media (min-width: 975px) {
+            display: none;
+        }
+    }
+    
     div.container {
         display: flex;
         justify-content: center;
         flex-direction: row !important;
 
-        img {
+        .desktop-image {
             @media (max-width: 975px) {
-                display: none !important;
+                display: none;
             }
         }
 
@@ -844,7 +850,7 @@ div.cooler-question {
                     display: block; /* Ensure it's block level for spacing */
                     position: relative; /* Adjusted for positioning */
                     margin-bottom: 8px; /* Space between the button and text */
-                    transition: all .15s linear;
+                    transition: all 0.15s linear;
                 }
 
                 /* Hover effect */
