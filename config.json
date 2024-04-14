@@ -11,6 +11,7 @@
     "skipButtonText": "DON'T KNOW? > SKIP",
     "variables": {
         "userId": "65fbe6084f133d916a56b174",
+        "notificationsEmail": "info@generalreq.com",
 
         "zapierCreateLeadUrl": "",
         "zapierUpdateLeadUrl": "",
@@ -113,10 +114,10 @@
             },
             {
                 "type": "text",
-                "id": "restaurant",
+                "id": "company",
                 "isRequired": true,
                 "placeholder": "Restaurant Name",
-                "name": "restaurant"
+                "name": "company"
             },
             {
                 "type": "tel",
